@@ -120,12 +120,9 @@ async def start(ev,bot,jdb,message_edited=None):
     text = '👋 Bienvenido A TGUploadCloud.👋\n\n'
     text+= 'Toma Nota....✍🏼\n\n'
     text+= '😋 TGUploadCloud es un bot simple,facil y rapido, destinado a la descarga y subida de contenido gratis en Cuba mediante las diferentes tipos de Nubes 🤑⚡. Si asi como oyes🧏.!\n\n'
-    text+= 'Su uso es sencillo✨ , aca de bajo 👇 te dejo las opciones y mi desarrollador 🥰.\n'
-
+    text+= 'Su uso es sencillo✨ , aca de bajo 👇 te dejo las opciones🥴. \n'
     buttons = [
-        [Button.inline('🗂Ver Archivos🗂','/ls')],
-        [Button.inline('⚙️Configuraciones⚙️','user_config')],
-        [Button.inline('🖥️👨‍💻Mi Desarrollador👨‍💻🖥️','@DevEMP')]
+        [Button.inline('⚙️Configuraciones⚙️','user_config')]
     ]
 
     try:
