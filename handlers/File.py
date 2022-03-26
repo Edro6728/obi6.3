@@ -45,8 +45,6 @@ async def handle(ev,bot,jdb,message_edited=None):
     shutil.move(filename,'root/'+filename)
 
     text = '📡 Subiendo Archivo(s)....\n\n'
-    text += text_progres(currentBits,totalBits)+'\n'
-        text += '➤ Total: '+sizeof_fmt(totalBits)+'\n\n'
         text += '➤ Subido: '+sizeof_fmt(currentBits)+'\n\n'
         text += '➤ Velocidad: '+sizeof_fmt(speed)+'/s\n\n'
         text += '➤ Tiempo de Descarga: '+str(datetime.timedelta(seconds=int(time)))+'s\n'
