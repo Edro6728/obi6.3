@@ -123,9 +123,9 @@ async def start(ev,bot,jdb,message_edited=None):
     text+= 'Su uso es sencillo✨ , aca de bajo 👇 te dejo las opciones y mi desarrollador 🥰.\n'
 
     buttons = [
-        [Button.inline('🗂Ver Archivos🗂','ls')],
+        [Button.inline('🗂Ver Archivos🗂','/ls')],
         [Button.inline('⚙️Configuraciones⚙️','user_config')],
-        [Button.inline('🖥️👨‍💻Mi Desarrollador👨‍💻🖥️','https://t.me/DevEMP/')]
+        [Button.inline('🖥️👨‍💻Mi Desarrollador👨‍💻🖥️','@DevEMP')]
     ]
 
     try:
