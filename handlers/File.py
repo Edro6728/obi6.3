@@ -45,11 +45,9 @@ async def handle(ev,bot,jdb,message_edited=None):
     shutil.move(filename,'root/'+filename)
 
     text = '📡 Subiendo Archivo(s)....\n\n'
-        text += '➤ Subido: '+sizeof_fmt(currentBits)+'\n\n'
-        text += '➤ Velocidad: '+sizeof_fmt(speed)+'/s\n\n'
-        text += '➤ Tiempo de Descarga: '+str(datetime.timedelta(seconds=int(time)))+'s\n'
-        text += '</b>'
-    buttons = []
+    text += '🏷️ '+filename+'\n'
+
+    text += '📦Tamaño Total: '+sizeof_fmt(filesize)+' \n'    buttons = []
     buttons.append([Button.inline('🗂Abrir Carpeta🗂','open_root')])
 
     await message.edit(text=text,buttons=buttons)
