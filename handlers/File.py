@@ -48,7 +48,7 @@ async def handle(ev,bot,jdb,message_edited=None):
     text += text_progres(currentBits,totalBits)+'\n'
         text += '➤ Porcentaje: '+str(porcent(currentBits,totalBits))+'%\n\n'
         text += '➤ Total: '+sizeof_fmt(totalBits)+'\n\n'
-        text += '➤ Descargado: '+sizeof_fmt(currentBits)+'\n\n'
+        text += '➤ Subido: '+sizeof_fmt(currentBits)+'\n\n'
         text += '➤ Velocidad: '+sizeof_fmt(speed)+'/s\n\n'
         text += '➤ Tiempo de Descarga: '+str(datetime.timedelta(seconds=int(time)))+'s\n'
         text += '</b>'
