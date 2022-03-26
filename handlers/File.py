@@ -46,7 +46,6 @@ async def handle(ev,bot,jdb,message_edited=None):
 
     text = '📡 Subiendo Archivo(s)....\n\n'
     text += '🏷️ '+filename+'\n'
-
     text += '📦Tamaño Total: '+sizeof_fmt(filesize)+' \n'    buttons = []
     buttons.append([Button.inline('🗂Abrir Carpeta🗂','open_root')])
 
